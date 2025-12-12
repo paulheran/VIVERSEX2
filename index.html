@@ -20,16 +20,26 @@
       height: 100%;
       width: 100%;
       background: #000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       font-family: sans-serif;
       color: white;
       text-align: center;
     }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    iframe {
+      width: 100%;
+      max-width: 1280px;
+      aspect-ratio: 16 / 9; /* Keeps 16:9 ratio on any screen */
+      border: none;
+      margin: 20px 0;
+    }
     a.button {
       display: inline-block;
-      margin-top: 20px;
       padding: 12px 24px;
       background: #1da1f2;
       color: white;
@@ -40,28 +50,22 @@
     a.button:hover {
       background: #0d8ddb;
     }
-    iframe {
-      width: 80%;
-      height: 500px;
-      border: none;
-      margin-top: 20px;
-    }
   </style>
 </head>
 <body>
-  <div>
+  <div class="container">
     <h1>Greenlake Skate Bowl - Pre-vis</h1>
-    <p>Interact with the world directly below. If it doesn’t load, click the button to open it in VIVERSE.</p>
+    <p>Interact with the world below. If it doesn’t load, click the button to open it in VIVERSE.</p>
     
-    <!-- Minimal-UI VIVERSE iframe -->
+    <!-- Minimal UI, responsive iframe -->
     <iframe src="player-frame.html"></iframe>
     
-    <br>
-    <a class="button" href="https://worlds.viverse.com/Xk4nZAd?full3d=&no-cookie=" target="_blank" rel="noopener noreferrer">
+    <a class="button" href="https://worlds.viverse.com/Xk4nZAd?full3d=&no-cookie=&ui=0&info=0&toolbar=0" target="_blank" rel="noopener noreferrer">
       Open Full World
     </a>
   </div>
 </body>
 </html>
+
 
 
