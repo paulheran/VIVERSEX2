@@ -40,13 +40,22 @@
     a.button:hover {
       background: #0d8ddb;
     }
+    iframe {
+      width: 80%;
+      height: 500px;
+      border: none;
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
   <div>
     <h1>Greenlake Skate Bowl - Pre-vis</h1>
     <p>Interact with the world directly below. If it doesn’t load, click the button to open it in VIVERSE.</p>
-    <iframe src="player-frame.html" width="80%" height="500px" style="border:none;"></iframe>
+    
+    <!-- Minimal-UI VIVERSE iframe -->
+    <iframe src="player-frame.html"></iframe>
+    
     <br>
     <a class="button" href="https://worlds.viverse.com/Xk4nZAd?full3d=&no-cookie=" target="_blank" rel="noopener noreferrer">
       Open Full World
@@ -54,4 +63,5 @@
   </div>
 </body>
 </html>
+
 
